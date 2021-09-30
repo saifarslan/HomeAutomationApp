@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VoiceRecognition">
+
+
+    <ImageView
+        android:layout_width="387dp"
+        android:layout_height="314dp"
+        android:src="@drawable/smarthome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477">
+
+    </ImageView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:onClick="start_listening"
+        android:src="@drawable/phon"
+        app:backgroundTint="@color/white"
+        app:fabSize="normal"
+        app:layout_anchorGravity="bottom|right|end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.874"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="254dp"
+        android:layout_height="66dp"
+        android:elevation="6dp"
+        android:text="Say Something"
+        android:textColor="#42C647"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

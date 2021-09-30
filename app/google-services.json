@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "359404194169",
+    "project_id": "automated-house-9ca26",
+    "storage_bucket": "automated-house-9ca26.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359404194169:android:c87a5f6f3725c5bfda87a8",
+        "android_client_info": {
+          "package_name": "com.example.automatedhouse"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359404194169-89pdonlkner9c0mflb0rf8ssqod5n8li.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.automatedhouse",
+            "certificate_hash": "53dae24506e0cd9bd08e6695b85cee77a3fe485c"
+          }
+        },
+        {
+          "client_id": "359404194169-k34jefqdbq82mv1gukkshg3921ulq487.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARe5kLAJsZ8whnmW_SJio0perMRiFQ6hI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359404194169-k34jefqdbq82mv1gukkshg3921ulq487.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.automatedhouse">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:debuggable="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/smarthome"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/smarthome"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AutomatedHouse">
+        <activity android:name=".VoiceRecognition"></activity>
+        <activity android:name=".active_appliances_cp" />
+        <activity android:name=".DiningHall" />
+        <activity android:name=".ElectricityConsumption" />
+        <activity android:name=".Appliances" />
+        <activity android:name=".StudyRoom" />
+        <activity android:name=".LivingRoom" />
+        <activity android:name=".BedRoom" />
+        <activity android:name=".Rooms" />
+        <activity android:name=".ReminderScreen" />
+        <activity android:name=".AddReminder" />
+        <activity android:name=".Menu" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".alarmReceiver"/>
+    </application>
+
+</manifest>

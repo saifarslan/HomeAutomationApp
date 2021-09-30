@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ElectricityConsumption">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:id="@+id/header"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:layout_below="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|center"
+                android:text="Automated House"
+                android:textStyle="bold"
+                android:textSize="45dp"
+                android:fontFamily="cursive"
+                android:textColor="@color/black"
+                />
+
+            <ImageView
+                android:id="@+id/title"
+                android:layout_width="312dp"
+                android:layout_height="110dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="49dp"
+                android:foregroundGravity="center"
+                android:src="@drawable/smarthome">
+
+            </ImageView>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/suqareboder"
+            android:layout_height="100dp" >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/bed_room_text"
+                    android:textColor="#005596"
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Current Consumption: "/>
+
+                <TextView
+                    android:id="@+id/current_consumption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="38"
+                    android:textAlignment="center"
+                    android:textColor="#005596"
+                    android:textSize="36sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

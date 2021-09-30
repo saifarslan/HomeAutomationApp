@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rooms">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:id="@+id/header"
+        android:orientation="vertical"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/heading"
+        >
+        <TextView
+            android:layout_below="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|center"
+            android:text="Automated House"
+            android:textStyle="bold"
+            android:textSize="45dp"
+            android:fontFamily="cursive"
+            android:textColor="@color/black"
+            />
+
+        <ImageView
+            android:id="@+id/title"
+            android:layout_width="312dp"
+            android:layout_height="110dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="49dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/smarthome"></ImageView>
+    </RelativeLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrolling"
+        >
+    <LinearLayout
+        android:layout_below="@+id/scrolling"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/boderline"
+            android:layout_height="100dp" >
+            <Button
+                android:onClick="set_bedroom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                >
+            </Button>
+
+        <ImageView
+            android:id="@+id/bed_room_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="32dp"
+            android:src="@drawable/bed"
+            android:layout_centerVertical="true" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/bed_room_image"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/bed_room_text"
+                android:textColor="#005596"
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:layout_height="wrap_content"
+                android:text="Bed Room"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#005596"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/boderline"
+            android:layout_height="100dp" >
+            <Button
+                android:onClick="set_livingRoom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                >
+            </Button>
+
+            <ImageView
+                android:id="@+id/living_room_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="32dp"
+                android:src="@drawable/livingroom"
+                android:layout_centerVertical="true"
+                android:contentDescription="TODO" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/living_room_image"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/living_room_text"
+                    android:textColor="#005596"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="Living Room"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#005596"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:background="@drawable/boderline"
+            android:layout_height="100dp" >
+            <Button
+                android:onClick="set_study_room"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                >
+
+            </Button>
+
+
+            <ImageView
+                android:id="@+id/Study_room_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="32dp"
+                android:src="@drawable/study"
+                android:layout_centerVertical="true" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/Study_room_image"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/Study_room_text"
+                    android:textColor="#005596"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="Study Room"/>
+                <TextView
+                    android:layout_width="wrap_content"
+
+                    android:textSize="15dp"
+                    android:textColor="#005596"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/boderline"
+            android:layout_height="100dp" >
+            <Button
+                android:onClick="set_dining_hall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                >
+            </Button>
+
+            <ImageView
+                android:id="@+id/dining_hall_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="32dp"
+                android:src="@drawable/bed"
+                android:layout_centerVertical="true" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/dining_hall_image"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/dining_hall_text"
+                    android:textColor="#005596"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dining Hall"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#005596"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/boderline"
+            android:layout_height="100dp" >
+
+            <ImageView
+                android:id="@+id/main_gate_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="32dp"
+                android:src="@drawable/gatefront"
+                android:layout_centerVertical="true" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/main_gate_image"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/main_text"
+                    android:textColor="#005596"
+                    android:layout_width="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_height="wrap_content"
+                    android:text="Main Gate"/>
+                <Switch
+                    android:id="@+id/main_gate"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                </Switch>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

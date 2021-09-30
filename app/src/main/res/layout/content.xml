@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="975px"
+    tools:context=".AddReminder">
+    
+    <TextView
+
+        android:id="@+id/heading_x"
+        android:background="@color/purple_500"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Update Reminder"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        android:textColor="@color/white"
+
+        >
+
+    </TextView>
+    <ScrollView
+        android:layout_below="@+id/heading_x"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:id="@+id/date"
+                android:background="@drawable/boderline"
+                android:layout_height="72dp">
+                <Button
+                    android:id="@+id/date_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    >
+                </Button>
+
+
+                <ImageView
+                    android:id="@+id/date_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="32dp"
+                    android:src="@drawable/date"
+                    android:layout_centerVertical="true" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/date_icon"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/date_text"
+                        android:textColor="#005596"
+                        android:layout_width="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="Date"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/set_date"
+                        android:textSize="15dp"
+                        android:textColor="#005596"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:id="@+id/time"
+                android:background="@drawable/boderline"
+                android:layout_height="72dp">
+                <Button
+                    android:id="@+id/time_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    >
+                </Button>
+
+                <ImageView
+                    android:id="@+id/time_icon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="32dp"
+                    android:src="@drawable/addtime"
+
+                    android:layout_centerVertical="true"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/time_icon"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/time_text"
+                        android:textColor="#005596"
+                        android:layout_width="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="Time"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/set_time"
+                        android:textSize="15dp"
+                        android:textColor="#005596"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/repeat"
+                android:layout_height="72dp"
+                android:background="@drawable/boderline"
+                >
+
+
+                <ImageView
+                    android:id="@+id/repeat_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="32dp"
+                    android:src="@drawable/repeat"
+                    android:layout_centerVertical="true"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/repeat_ll"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/repeat_icon"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/repeat_text"
+                        android:textColor="#005596"
+                        android:layout_width="wrap_content"
+                        android:textSize="15dp"
+                        android:layout_height="wrap_content"
+                        android:text="Repeat"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:id="@+id/set_repeat"
+                        android:textSize="15dp"
+                        android:textColor="#005596"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <Switch
+                    android:id="@+id/switch_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="8dp"
+                    android:checked="true"
+                    android:textOn="On"
+                    android:textOff="Off"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                ></TextView>
+            <Button
+                android:id="@+id/update"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Update"
+                android:textSize="25sp"
+                android:textStyle="italic"
+                android:background="@drawable/rounded_button"
+                >
+
+            </Button>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
